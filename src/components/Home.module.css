@@ -1,0 +1,252 @@
+/* Resetting default body margin and overflow */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Container for home page */
+.homeContainer {
+  padding: 0; /* No padding on home container */
+  width: 100%; /* Fill the full width */
+  margin: 0; /* No margin */
+}
+
+.heroSection {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Center items vertically */
+  height: 100vh; /* Full height */
+  background-color: #0a192f; /* Background color */
+  padding: 0 50px; /* Add padding for some space around */
+}
+
+.heroText {
+  flex: 1; /* Allow the text to take up available space */
+  text-align: left; /* Align text to the left */
+  padding-right: 50px; /* Add padding to the right for spacing between text and image */
+}
+
+.heroImage {
+  flex: 1; /* Allow the image to take up available space */
+  text-align: right; /* Align the image to the right */
+  width: 350px; /* Set image width */
+  height: 350px; /* Set image height */
+  object-fit: cover; /* Ensure the image covers the square area */
+  margin-left: 50px; /* Space to the left of the image */
+}
+
+
+.heroText h1 {
+  font-size: 48px;
+  color: #64ffda;
+  font-weight: 700; /* Increased font weight */
+}
+
+.heroText h1 span {
+  color: white;
+}
+
+.heroText p {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 500; /* Increased font weight */
+}
+.heroImage {
+ flex: 1;
+ text-align: left;
+ /* max-width: 450px;
+ height: auto;
+ border-radius: 10px;
+ object-fit: cover; */
+ width: 350px; /* Increased width of the square */
+ height: 350px; /* Increased height of the square */
+ object-fit: cover; /* Ensures the image covers the square area */
+ /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
+ margin-right: 50px; /* Space to the right of the image */
+ margin-bottom: 20px; /* Space below the image */
+
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #64ffda;
+  color: #0a192f;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #0a192f;
+}
+
+.aboutSection {
+  padding: 60px 0; /* Vertical padding only */
+  background-color: #0a192f; /* Background color */
+  color: #fff;
+}
+
+.aboutSection h2 {
+  font-size: 36px;
+  color: #64ffda;
+  text-align: center;
+  font-weight: 700; /* Increased font weight */
+}
+
+.aboutContent {
+  display: flex;
+  justify-content: center; /* Center contents */
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  margin-top: 40px;
+  width: 100%; /* Full width */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.profileImage {
+  width: 350px; /* Increased width of the square */
+  height: 350px; /* Increased height of the square */
+  object-fit: cover; /* Ensures the image covers the square area */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-right: 40px; /* Space to the right of the image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.aboutText {
+  width: 100%; /* Full width */
+  max-width: 800px; /* Limit max width for better readability */
+  padding: 0 20px; /* Padding to center the text */
+  margin: 0 auto; /* Center the text container */
+}
+
+.aboutText p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #c0c7d1;
+  font-weight: 400; /* Increased font weight */
+  transform:translateX(20px);
+}
+
+.skills {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Gap between skills */
+  margin-top: 20px; /* Space above the skills section */
+  padding: 20px; /* Padding inside the skills section */
+  
+}
+
+.skillGroup {
+  font-size: 20px; /* Font size for skills */
+  color: #0a192f; /* Text color */
+  padding: 10px; /* Padding inside each skill */
+  background-color: #ffffff; /* White background for each skill */
+  border-radius: 5px; /* Rounded corners for each skill */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skillGroup:hover {
+  background-color: #64ffda; /* Change background color on hover */
+  color: #0a192f; /* Change text color on hover */
+  transform: translateY(-10px); /* Slightly lift the skill box on hover */
+}
+
+.skillStars {
+  color: #64ffda; /* Color for stars */
+  font-weight: bold; /* Make stars bold */
+}
+
+/* Download CV Button */
+.downloadCv {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #0a192f;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transform:translateX(20px);
+}
+
+.downloadCv:hover {
+  background-color: #ffffff;
+  color: #0a192f;
+  
+}
+
+/* Responsive design for tablets and mobiles */
+@media (max-width: 1024px) { /* Tablet */
+  .heroText h1 {
+    font-size: 44px; /* Increased heading size */
+    font-weight: 700; /* Increased font weight */
+  }
+
+  .heroText p {
+    font-size: 22px; /* Increased paragraph size */
+    font-weight: 500; /* Increased font weight */
+  }
+
+  .aboutText p {
+    font-size: 20px; /* Increased paragraph size for readability */
+    font-weight: 400; /* Increased font weight */
+  }
+
+  .aboutContent {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .profileImage {
+    margin-bottom: 20px; /* Space below image */
+  }
+
+  .aboutText {
+    width: 90%; /* Wider width on smaller screens */
+    padding: 0 10px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .heroText h1 {
+    font-size: 40px; /* Further increased heading size */
+    font-weight: 700; /* Increased font weight */
+  }
+
+  .heroText p {
+    font-size: 20px; /* Further increased paragraph size */
+    font-weight: 500; /* Increased font weight */
+  }
+
+  .aboutText p {
+    font-size: 18px; /* Adjusted paragraph size for readability */
+    font-weight: 400; /* Increased font weight */
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+  }
+
+  .skillGroup {
+    font-size: 18px; /* Adjusted font size for mobile */
+  }
+}
+
+@media (min-width: 1025px) { /* Desktop */
+  .heroText h1 {
+    font-size: 48px; /* Original heading size for desktops */
+  }
+
+  .heroText p {
+    font-size: 24px; /* Original paragraph size for desktops */
+  }
+}
+
+@media (min-width: 1280px) { /* Large desktops */
+  .aboutSection {
+    padding: 80px 0; /* More vertical space */
+  }
+}
