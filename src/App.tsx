@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Services from './components/Services';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Certifications from './components/Certifications';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/certificates" element={<Certifications/>} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

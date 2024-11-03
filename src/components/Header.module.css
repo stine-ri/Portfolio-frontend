@@ -5,7 +5,7 @@
   padding: 20px;
   background-color: #0a192f;
   position: fixed;
-  width: 100%;
+  width: 100%; /* Keep full width for desktop */
   top: 0;
   z-index: 100;
   box-sizing: border-box;
@@ -42,34 +42,69 @@
   color: #0a192f;
 }
 
+/* Hamburger menu styles */
+.hamburger {
+  display: none; /* Hide by default for desktop */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
 /* Media Queries for responsiveness */
 
 /* Medium screens */
 @media (max-width: 1024px) {
   .logoImage {
-    width: 280px; /* Adjusted size for medium screens */
-    height: 70px; /* Slightly smaller height for medium screens */
+    width: 80px; /* Adjusted size for medium screens */
+    height: 80px; /* Consistent height for medium screens */
   }
 
   .navLink {
-    font-size: 16px; /* Keep size the same */
-    padding: 8px 12px; /* Adjust padding for better touch targets */
+    font-size: 14px; /* Slightly smaller font size */
+    padding: 6px 10px; /* Adjust padding for better touch targets */
   }
 }
 
 /* Small screens */
 @media (max-width: 768px) {
   .header {
-    padding: 10px 20px;
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+    margin-right: 5%; /* Reduce space on the right */
   }
 
   .logoImage {
-    width: 120px; /* Further adjusted size for mobile */
-    height: 60px; /* Slightly smaller height for mobile */
+    width: 60px; /* Smaller size for mobile */
+    height: 60px; /* Smaller height for mobile */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+  }
+
+  .navbar {
+    display: none; /* Hide navbar by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 70px; /* Position below header */
+    right: 0;
+    background-color: #0a192f; /* Retain existing background color */
+    width: 50%; /* Full width */
+    z-index: 99;
+  }
+
+  .navbar.active {
+    display: flex; /* Show navbar when active */
   }
 
   .navLink {
-    padding: 8px 12px; /* Consistent padding for links */
-    font-size: 16px; /* Maintain font size for readability */
+    padding: 15px; /* Increased padding for mobile */
+    text-align: center; /* Center text for better alignment */
   }
 }

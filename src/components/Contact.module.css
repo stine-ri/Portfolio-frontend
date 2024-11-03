@@ -1,4 +1,3 @@
-
 .contactSection {
   padding: 50px;
   width: 110%;
@@ -141,22 +140,50 @@
 
 /* Mobile view (480px and below) */
 @media (max-width: 480px) {
+  .contactSection {
+    padding: 40px 20px; /* Adjust padding for small screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    max-height: 100vh; /* Limit height to viewport */
+    overflow: auto; /* Allow scrolling if content exceeds height */
+  }
+
+  .container {
+    flex-direction: column; /* Stack contact info and form */
+    width: 100%; /* Full width */
+    align-items: center; /* Center items */
+  }
+
+  .contactInfo {
+    width: 90%; /* Slightly reduced width */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Margin below contact info */
+  }
+
+  .contactForm {
+    width: 90%; /* Make form responsive */
+  }
+
   .contactInfo h2 {
-    font-size: 24px;
+    font-size: 24px; /* Adjust heading size */
   }
 
   .contactForm input,
   .contactForm textarea {
-    padding: 12px;
+    padding: 12px; /* Adjust padding for inputs */
+    font-size: 14px; /* Smaller font size */
   }
 
   .contactForm button {
-    padding: 12px;
-    font-size: 14px;
+    padding: 12px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
   }
 
   .footer {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Stack footer items vertically */
+    gap: 20px; /* Add gap between items */
+    width: 100%; /* Ensure footer takes full width */
+    text-align: center; /* Center footer text */
   }
 }
