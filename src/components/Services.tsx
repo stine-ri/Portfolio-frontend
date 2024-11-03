@@ -5,7 +5,7 @@ const Services: React.FC = () => {
   // Replace these URLs with your actual GitHub repository links for each service
   const serviceLinks = [
     'https://tech-assessment-rosy.vercel.app/',
-    'https://car-rental-frontend-git-master-christine-nyambwaris-projects.vercel.app/',
+    'https://health-tyak.vercel.app/',
     'https://api-vehiclebackend.onrender.com',
     'https://riyanhotel.azurewebsites.net/',
   ];

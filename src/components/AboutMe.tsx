@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => {
           <Link to="/contact">
               <button className={styles.hireMeBtn}>Hire Me</button>
           </Link>
-          <button className={styles.resumeBtn}>Resume</button>
+          <button className={styles.resumeBtn}>Curriculum Vitae</button>
         </div>
       </div>
     </section>

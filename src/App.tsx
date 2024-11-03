@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Services from './components/Services';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
@@ -17,7 +17,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} /> {/* Landing page */}
         <Route path="/about" element={<AboutMe />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />

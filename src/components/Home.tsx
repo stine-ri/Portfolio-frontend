@@ -53,7 +53,17 @@ const Home: React.FC = () => {
                 <div className={styles.skillStars}>★★★★★</div>
               </div>
             </div>
-            <a href="/path_to_cv" className={styles.downloadCv}>Download CV</a>
+            <a href="https://resume-lb4s.vercel.app/" className={styles.downloadCv}>Deployed Resume</a> <br />
+            <a 
+              href="/Christine_resume.pdf" 
+               className={styles.downloadCv} 
+               target="_blank" 
+              rel="noopener noreferrer"
+              >
+                Download Resume PDF
+            </a>
+
+
           </div>
         </div>
       </section>

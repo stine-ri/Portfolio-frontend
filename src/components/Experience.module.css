@@ -25,7 +25,6 @@
   flex: 1 1 calc(20% - 20px); /* 5 items in a row with spacing */
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
-
 .skill:hover {
   transform: scale(1.05); /* Scale up on hover */
 }
@@ -34,9 +33,11 @@
   width: 160px; /* Slightly larger icon */
   height: 130px; /* Slightly larger icon */
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 p {
   color: #64ffda;
   font-size: 16px;
 }
+

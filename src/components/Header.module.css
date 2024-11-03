@@ -14,9 +14,10 @@
 
 /* Logo styling for increased width */
 .logoImage {
-  width: 350px; /* Increased width for better visibility */
-  height: 90px; /* Height remains the same */
-  object-fit: cover; /* Ensures image fills the container */
+  width: 90px; 
+  height: 90px; 
+  object-fit: cover;  
+  border-radius: 50%;
 }
 
 /* Navbar styles */

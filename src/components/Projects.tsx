@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Portfolio.module.css';
+import styles from './Projects.module.css';
 import vehicle from '../assets/images/vehicle.png';
 import ToDo from '../assets/images/To Do.png'; 
 import APPP2 from '../assets/images/APPP2.png';
-import mental from '../assets/images/mental.jpg'
+import health from '../assets/images/health.png'
 
 interface Project {
   title: string;
@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "Vehicle Rental Management System",
     description: "A mobile app design that helps users find meaningful connections based on mutual interests and preferences.",
     image: vehicle,
-    link: "https://vercel.com/christine-nyambwaris-projects/car-rental-frontend",
+    link: "https://car-rental-frontend-liard.vercel.app/",
   },
   {
     title: "TO DO",
@@ -26,32 +26,33 @@ const projects: Project[] = [
     link: "https://tech-assessment-rosy.vercel.app/",
   },
   {
+    title: "Mental Health Chatbot",
+    description: " A chatbot designed to provide mental health support, integrating GPT-3 for personalized wellness, recommendations and conversation insights.",
+    image: health,
+    link: "https://health-tyak.vercel.app/",
+  },
+  {
     title: "Restaurant API",
     description: "An app focused on fitness tracking, goal-setting, and health analytics for users looking to stay in shape.",
     image: APPP2,
     link: "https://riyanhotel.azurewebsites.net/",
   },
-  {
-    title: "Mental Health Chatbot",
-    description: " A chatbot designed to provide mental health support, integrating GPT-3 for personalized wellness, recommendations and conversation insights.",
-    image: mental,
-    link: "https://riyanhotel.azurewebsites.net/",
-  },
+ 
 ];
 
 const Portfolio: React.FC = () => {
   return (
     <section className={styles.portfolioSection}>
-      <h2 className={styles.title}>Portfolio</h2>
+      <h2 className={styles.title}>Projects</h2>
 
       <div className={styles.tabMenu}>
   <a href="https://riyanhotel.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
     <button>Backend Developer</button>
   </a>
-  <a href="https://tech-assessment-rosy.vercel.app/" target="_blank" rel="noopener noreferrer">
+  <a href="https://health-tyak.vercel.app/" target="_blank" rel="noopener noreferrer">
     <button>Frontend Developer</button>
   </a>
-  <a href="https://car-rental-frontend-git-master-christine-nyambwaris-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+  <a href="https://car-rental-frontend-liard.vercel.app/" target="_blank" rel="noopener noreferrer">
     <button>FullStack Developer</button>
   </a>
   <a href="https://api-vehiclebackend.onrender.com" target="_blank" rel="noopener noreferrer">

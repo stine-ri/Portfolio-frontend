@@ -12,7 +12,10 @@ import tailwind from '../assets/images/tailwind.png';
 import scss from '../assets/images/scss.png';
 import drizzle from '../assets/images/drizzle.png';
 import daisy from '../assets/images/daisy.png';
-
+import redux from '../assets/images/RRedux.svg'
+import azure from '../assets/images/azure.jpg'
+import sql from '../assets/images/sql.png'
+import mySql from '../assets/images/mySql.png'
 const Experience: React.FC = () => {
   return (
     <section id="experience" className={styles.experienceSection}>
@@ -66,6 +69,23 @@ const Experience: React.FC = () => {
           <img src={daisy} alt="SCSS" className={styles.skillIcon} />
           <p>Daisy UI</p>
         </div>
+        <div className={styles.skill}>
+          <img src={redux} alt="REDUX.JS" className={styles.skillIcon} />
+          <p>Redux.js</p>
+        </div>
+        <div className={styles.skill}>
+          <img src={azure} alt="Azure" className={styles.skillIcon} />
+          <p>Azure</p>
+        </div>
+        <div className={styles.skill}>
+          <img src={sql} alt="Sql" className={styles.skillIcon} />
+          <p>SQL</p>
+        </div>
+        <div className={styles.skill}>
+          <img src={mySql} alt="mySql" className={styles.skillIcon} />
+          <p>mySql</p>
+        </div>
+        
         {/* Add more skills as needed */}
       </div>
     </section>
