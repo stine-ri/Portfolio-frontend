@@ -1,3 +1,5 @@
-body{
-    padding: 20px;
-}
+
+/* index.css or app.css */
+@tailwind utilities;
+
+

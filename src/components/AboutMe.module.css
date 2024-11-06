@@ -1,4 +1,3 @@
-
 .aboutSection {
   display: flex;
   align-items: center;
@@ -42,10 +41,13 @@
   .aboutSection {
     flex-direction: column;
     align-items: center;
+    height: 100vh; /* Full height for tablet */
+    padding: 20px; /* Adjust padding for smaller screens */
   }
 
   .profileImg {
     width: 200px;
+    margin-bottom: 10px; /* Reduced space on tablet */
   }
 
   .aboutText {
@@ -55,8 +57,15 @@
 
 /* Media Query for Mobile Phones */
 @media (max-width: 768px) {
+  .aboutSection {
+    height: 100vh; /* Full height for mobile */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
   .profileImg {
-    width: 150px;
+    width: 350px;
+    height: 400px;
+    margin-bottom: 5px; /* Reduced space between image and text only on mobile */
   }
 
   .hireMeBtn, .resumeBtn, .githubBtn {

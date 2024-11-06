@@ -9,7 +9,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Certifications from './components/Certifications';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import './App.css';
 const App: React.FC = () => {
   return (
     <Router>
