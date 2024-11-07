@@ -202,7 +202,7 @@ body {
   }
 
   .skills {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
     width: 90%; /* Increase width for skills section */
     margin: 0 auto; /* Center skills section */
   }
@@ -229,8 +229,8 @@ body {
   }
 
   .skills {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
-    width: 90%; /* Increase width for skills section */
+    grid-template-columns: 1fr; /* Single column on small screens */
+    width: 100%; /* Full width for skills section */
     margin: 0 auto; /* Center skills section */
   }
 
