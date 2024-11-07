@@ -16,29 +16,29 @@ body {
   display: flex; /* Use flexbox for layout */
   justify-content: space-between; /* Space between text and image */
   align-items: center; /* Center items vertically */
-  height: 100vh; /* Full height */
+  min-height: 100vh; /* Use min-height to allow for content overflow */
   background-color: #0a192f; /* Background color */
-  padding: 0 60px; /* Increased padding for more space */
+  padding: 0 50px; /* Add padding for some space around */
+  padding-top: 50px; /* Prevent content from being cut off at the top */
 }
 
 .heroText {
   flex: 1; /* Allow the text to take up available space */
   text-align: left; /* Align text to the left */
-  padding-right: 60px; /* Increased right padding for more space */
+  padding-right: 50px; /* Add padding to the right for spacing between text and image */
 }
 
 .heroImage {
   flex: 1; /* Allow the image to take up available space */
   text-align: right; /* Align the image to the right */
-  width: 400px; /* Increased width of the square */
-  height: 400px; /* Increased height of the square */
+  width: 350px; /* Set image width */
+  height: 350px; /* Set image height */
   object-fit: cover; /* Ensure the image covers the square area */
-  margin-left: 60px; /* Space to the left of the image */
-  margin-bottom: 30px; /* Increased space below the image */
+  margin-left: 50px; /* Space to the left of the image */
 }
 
 .heroText h1 {
-  font-size: 56px; /* Increased font size */
+  font-size: 48px;
   color: #64ffda;
   font-weight: 700; /* Increased font weight */
 }
@@ -48,14 +48,24 @@ body {
 }
 
 .heroText p {
-  font-size: 28px; /* Increased paragraph size */
+  font-size: 24px;
   margin-top: 10px;
   font-weight: 500; /* Increased font weight */
 }
 
+.heroImage {
+  flex: 1;
+  text-align: left;
+  width: 350px; /* Increased width of the square */
+  height: 350px; /* Increased height of the square */
+  object-fit: cover; /* Ensures the image covers the square area */
+  margin-right: 50px; /* Space to the right of the image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
 .button {
-  margin-top: 30px; /* Increased margin */
-  padding: 12px 35px; /* Increased padding */
+  margin-top: 20px;
+  padding: 10px 30px;
   background-color: #64ffda;
   color: #0a192f;
   border-radius: 8px;
@@ -69,13 +79,13 @@ body {
 }
 
 .aboutSection {
-  padding: 80px 0; /* Increased vertical padding */
+  padding: 60px 0; /* Vertical padding only */
   background-color: #0a192f; /* Background color */
   color: #fff;
 }
 
 .aboutSection h2 {
-  font-size: 48px; /* Increased font size */
+  font-size: 36px;
   color: #64ffda;
   text-align: center;
   font-weight: 700; /* Increased font weight */
@@ -86,29 +96,29 @@ body {
   justify-content: center; /* Center contents */
   align-items: flex-start; /* Align items to the top */
   padding: 20px;
-  margin-top: 60px; /* Increased margin */
+  margin-top: 40px;
   width: 100%; /* Full width */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .profileImage {
-  width: 400px; /* Increased width of the square */
-  height: 400px; /* Increased height of the square */
+  width: 350px; /* Increased width of the square */
+  height: 350px; /* Increased height of the square */
   object-fit: cover; /* Ensures the image covers the square area */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-right: 60px; /* Increased space to the right of the image */
-  margin-bottom: 30px; /* Increased space below the image */
+  margin-right: 40px; /* Space to the right of the image */
+  margin-bottom: 20px; /* Space below the image */
 }
 
 .aboutText {
   width: 100%; /* Full width */
-  max-width: 900px; /* Increased max width for better readability */
+  max-width: 800px; /* Limit max width for better readability */
   padding: 0 20px; /* Padding to center the text */
   margin: 0 auto; /* Center the text container */
 }
 
 .aboutText p {
-  font-size: 20px; /* Increased paragraph size */
+  font-size: 18px;
   line-height: 1.6;
   color: #c0c7d1;
   font-weight: 400; /* Increased font weight */
@@ -118,15 +128,15 @@ body {
 .skills {
   display: grid; /* Use grid for layout */
   grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 30px; /* Increased gap between skills */
-  margin-top: 30px; /* Increased space above the skills section */
-  padding: 30px; /* Increased padding inside the skills section */
+  gap: 20px; /* Gap between skills */
+  margin-top: 20px; /* Space above the skills section */
+  padding: 20px; /* Padding inside the skills section */
 }
 
 .skillGroup {
-  font-size: 22px; /* Increased font size for skills */
+  font-size: 20px; /* Font size for skills */
   color: #0a192f; /* Text color */
-  padding: 15px; /* Increased padding inside each skill */
+  padding: 10px; /* Padding inside each skill */
   background-color: #ffffff; /* White background for each skill */
   border-radius: 5px; /* Rounded corners for each skill */
   text-align: center; /* Center text */
@@ -146,8 +156,8 @@ body {
 
 /* Download CV Button */
 .downloadCv {
-  margin-top: 30px; /* Increased margin */
-  padding: 12px 25px; /* Increased padding */
+  margin-top: 20px;
+  padding: 10px 20px;
   background-color: #64ffda;
   color: #0a192f;
   border-radius: 8px;
@@ -167,21 +177,21 @@ body {
     flex-direction: column; /* Stack elements vertically */
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    padding: 30px; /* Increased padding */
+    padding: 20px; /* Add some padding */
   }
 
   .heroText {
     padding-right: 0; /* Remove right padding */
     text-align: center; /* Center text */
-    margin-bottom: 30px; /* Increased space below text */
+    margin-bottom: 20px; /* Add space below text */
   }
 
   .heroImage {
     margin-left: 0; /* Remove left margin */
     width: 100%; /* Set width to 100% */
     height: auto; /* Maintain aspect ratio */
-    max-width: 500px; /* Increased max width */
-    margin-bottom: 30px; /* Increased space below the image */
+    max-width: 400px; /* Limit max width */
+    margin-bottom: 20px; /* Space below the image */
   }
 
   .aboutContent {
@@ -191,66 +201,51 @@ body {
   }
 
   .profileImage {
-    margin-bottom: 30px; /* Increased space below image */
+    margin-bottom: 20px; /* Space below image */
     width: 100%; /* Set to full width */
-    max-width: 500px; /* Increased max width */
+    max-width: 400px; /* Limit max width */
   }
 
   .aboutText {
     width: 90%; /* Wider width on smaller screens */
-    padding: 0 20px; /* Increased padding */
+    padding: 0 10px; /* Reduce padding */
   }
 
   .skills {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
     width: 90%; /* Increase width for skills section */
     margin: 0 auto; /* Center skills section */
   }
 
   .skillGroup {
-    font-size: 20px; /* Adjusted font size for mobile */
+    font-size: 18px; /* Adjusted font size for mobile */
   }
 }
 
 @media (max-width: 768px) { /* Mobile */
   .heroText h1 {
-    font-size: 48px; /* Further increased heading size */
+    font-size: 40px; /* Further increased heading size */
     font-weight: 700; /* Increased font weight */
   }
 
   .heroText p {
-    font-size: 24px; /* Further increased paragraph size */
+    font-size: 20px; /* Further increased paragraph size */
     font-weight: 500; /* Increased font weight */
   }
 
   .aboutText p {
-    font-size: 20px; /* Adjusted paragraph size for readability */
+    font-size: 18px; /* Adjusted paragraph size for readability */
     font-weight: 400; /* Increased font weight */
   }
 
   .skills {
-    grid-template-columns: 1fr; /* Single column on small screens */
-    width: 100%; /* Full width for skills section */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    width: 90%; /* Increase width for skills section */
     margin: 0 auto; /* Center skills section */
   }
 
   .skillGroup {
-    font-size: 20px; /* Adjusted font size for mobile */
+    font-size: 18px; /* Adjusted font size for mobile */
   }
 }
 
-@media (min-width: 1025px) { /* Desktop */
-  .heroText h1 {
-    font-size: 56px; /* Original heading size for desktops */
-  }
-
-  .heroText p {
-    font-size: 28px; /* Original paragraph size for desktops */
-  }
-}
-
-@media (min-width: 1280px) { /* Large desktops */
-  .aboutSection {
-    padding: 100px 0; /* More vertical space */
-  }
-}
