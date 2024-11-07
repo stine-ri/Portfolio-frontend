@@ -208,7 +208,7 @@ body {
 
   .downloadCv {
     padding: 10px 15px; /* Adjust CV button padding */
-    margin-left: 50px; /* Add uniform margin to the left */
+    margin-left: 30px; /* Add uniform margin to the left */
   }
 }
 
@@ -234,15 +234,5 @@ body {
     font-size: 16px; /* Smaller font size for skills */
   }
 
-  .button {
-    padding: 10px 20px; /* Adjust button padding */
-    margin-top: 20px; /* Add margin to separate the button */
-    margin-left: 50px; /* Add uniform margin to left */
-  }
-
-  .downloadCv {
-    padding: 10px 15px; /* Adjust button padding */
-    margin-top: 20px; /* Add margin to separate the button */
-    margin-left: 50px; /* Add uniform margin to the left */
-  }
+ 
 }
