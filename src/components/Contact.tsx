@@ -39,16 +39,16 @@ const Contact: React.FC = () => {
       <div className={styles.footer}>
   <span>© 2024 Stine Portfolio. All rights reserved.</span>
   <div className={styles.socialIcons}>
-    <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+    {/* <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-facebook"></i>
-    </a>
+    </a> */}
     <a href="https://www.linkedin.com/in/christine-nyambwari-8b465b2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-linkedin"></i>
     </a>
     <a href="https://github.com/stine-ri" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-github"></i>
     </a>
-    <a href="https://www.behance.net/your-profile" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.behance.net/christinyambwa" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-behance"></i>
     </a>
   </div>

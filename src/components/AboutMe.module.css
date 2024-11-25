@@ -15,8 +15,8 @@
 .profileImg {
   width: 40%;
   height: auto; /* Keep image aspect ratio */
-  max-width: 250px; /* Limit width for larger screens */
-  max-height: 300px; /* Optional limit on height */
+  max-width: 650px; /* Limit width for larger screens */
+  max-height: 600px; /* Optional limit on height */
 }
 
 .aboutText {

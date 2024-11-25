@@ -4,7 +4,7 @@ import vehicle from '../assets/images/vehicle.png';
 import ToDo from '../assets/images/To Do.png'; 
 import APPP2 from '../assets/images/APPP2.png';
 import health from '../assets/images/health.png'
-
+import dream from '../assets/images/dream.png'
 interface Project {
   title: string;
   description: string;
@@ -14,29 +14,36 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Vehicle Rental Management System",
-    description: "A mobile app design that helps users find meaningful connections based on mutual interests and preferences.",
-    image: vehicle,
-    link: "https://car-rental-frontend-liard.vercel.app/",
-  },
-  {
-    title: "TO DO",
-    description: "An e-commerce app that provides a seamless shopping experience, complete with cart management and payment integration.",
-    image: ToDo,
-    link: "https://tech-assessment-rosy.vercel.app/",
+    title: "Dream Dealer System",
+    description: "Dream Dealer: Dream Dealer is a vehicle rental company that provides a wide range of rental options, from luxurious four-wheelers to efficient two-wheelers, catering to individuals and businesses. With a focus on convenience and affordability, Dream Dealer ensures a seamless booking process, excellent customer service, and well-maintained vehicles for every journey.",
+    image: dream,
+    link: "https://dream-dealer-1dol.vercel.app/",
   },
   {
     title: "Mental Health Chatbot",
-    description: " A chatbot designed to provide mental health support, integrating GPT-3 for personalized wellness, recommendations and conversation insights.",
+    description: " The Mental Health Chatbot is an AI-driven platform designed to support mental and physical wellness. Leveraging GPT-3, it provides empathetic conversations, mental health resources, and wellness tips. It connects users to professional help when needed, ensuring a personalized and confidential experience for anyone seeking mental health support",
     image: health,
     link: "https://health-tyak.vercel.app/",
   },
   {
+    title: "TO DO",
+    description: " The To-Do App is a productivity-focused tool designed to help users manage their daily tasks efficiently. It features task categorization, reminders, priority settings, and a user-friendly interface, making it easier to stay organized and achieve goals. Whether for personal use or team collaboration, this app simplifies task management.",
+    image: ToDo,
+    link: "https://to-do-app-eight-mocha.vercel.app/",
+  },
+  {
+    title: "Vehicle Rental Management System",
+    description: " vehicle rental company that provides a wide range of rental options, from luxurious four-wheelers to efficient two-wheelers, catering to individuals and businesses. With a focus on convenience and affordability, Dream Dealer ensures a seamless booking process, excellent customer service, and well-maintained vehicles for every journey",
+    image: vehicle,
+    link: "https://car-rental-frontend-liard.vercel.app/",
+  },
+  {
     title: "Restaurant API",
-    description: "An app focused on fitness tracking, goal-setting, and health analytics for users looking to stay in shape.",
+    description: " The Restaurant API is a cloud-hosted solution built on Azure that streamlines restaurant operations. It supports functionalities like menu management, reservation booking, order tracking, and customer feedback. Scalable and secure, this API enables restaurants to enhance customer satisfaction and operational efficiency",
     image: APPP2,
     link: "https://riyanhotel.azurewebsites.net/",
   },
+
  
 ];
 

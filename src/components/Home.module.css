@@ -152,87 +152,101 @@ body {
   /* Hero Section adjustments for small screens */
   .heroSection {
     flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    padding: 0 20px; /* Add padding for better spacing */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add consistent padding */
+    gap: 20px; /* Add space between elements */
   }
 
   .heroText {
     text-align: center; /* Center text */
-    padding-right: 0; /* Remove padding */
-    margin-bottom: 20px; /* Add space between text and image */
+    margin: 0 auto; /* Center align the text block */
+    padding: 0; /* Remove extra padding */
   }
 
   .heroImage {
-    width: 100%; /* Make image responsive */
+    width: 90%; /* Make image responsive */
+    max-width: 300px; /* Limit maximum width */
     height: auto; /* Maintain aspect ratio */
-    max-width: 400px; /* Limit maximum width */
-    margin-left: 0; /* Remove left margin */
-    margin-bottom: 20px; /* Space below the image */
+    margin: 0 auto; /* Center the image */
   }
 
   .aboutContent {
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center the content */
-    width: 90%; /* Reduce the width for smaller screens */
-    margin: 0 auto; /* Center align the section */
+    width: 90%; /* Reduce the width */
+    margin: 20px auto; /* Add vertical spacing */
   }
 
   .profileImage {
-    margin-bottom: 20px; /* Add space below the image */
+    margin-bottom: 15px; /* Add space below the image */
     width: 100%; /* Make image responsive */
-    max-width: 400px; /* Limit max width */
+    max-width: 250px; /* Limit max width */
   }
 
   .aboutText {
-    width: 90%; /* Increase width to fill screen */
-    padding: 0 10px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 16px; /* Adjust text size */
   }
 
   .skills {
-    grid-template-columns: repeat(2, 1fr); /* Two columns instead of three */
-    width: 90%; /* Increase width for skills section */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 15px; /* Add spacing between items */
+    width: 100%; /* Full width */
     margin: 0 auto; /* Center the section */
-    padding: 0 20px; /* Add uniform padding to match button section */
   }
 
   .skillGroup {
-    font-size: 18px; /* Adjust font size */
-  }
-
-  .button {
-    padding: 10px 20px; /* Adjust button size */
     font-size: 16px; /* Adjust font size */
-    margin-left: 50px; /* Add uniform margin to the left */
+    text-align: center; /* Center align skills text */
   }
 
+  /* Button adjustments for small screens */
+  .button,
   .downloadCv {
-    padding: 10px 15px; /* Adjust CV button padding */
-    margin-left: 30px; /* Add uniform margin to the left */
+    width: auto; /* Don't take full width */
+    max-width: 250px; /* Limit button width */
+    margin: 10px 0; /* Add vertical spacing */
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center text */
   }
 }
 
 @media (max-width: 768px) { /* Mobile devices */
   /* Hero Section adjustments */
   .heroText h1 {
-    font-size: 40px; /* Slightly smaller heading */
+    font-size: 24px; /* Smaller heading */
+    line-height: 1.4; /* Adjust line height for readability */
   }
 
   .heroText p {
-    font-size: 20px; /* Smaller paragraph text */
+    font-size: 16px; /* Smaller paragraph text */
+    line-height: 1.6; /* Improve text readability */
   }
 
   .aboutText p {
-    font-size: 16px; /* Smaller text for mobile */
+    font-size: 14px; /* Smaller text for about section */
+    line-height: 1.5; /* Adjust readability */
   }
 
   .skills {
     grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px; /* Adjust spacing */
   }
 
   .skillGroup {
-    font-size: 16px; /* Smaller font size for skills */
+    font-size: 14px; /* Smaller font size for skills */
   }
 
- 
+  /* Button adjustments for mobile */
+  .button,
+  .downloadCv {
+    width: auto; /* Avoid full width */
+    max-width: 220px; /* Limit button width */
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size */
+  }
 }
