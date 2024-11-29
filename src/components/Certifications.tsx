@@ -7,8 +7,10 @@ import teach2giveImage from '../assets/images/teach2give.jpg';
 import zidioImage from '../assets/images/india.jpg';
 
 const Certifications: React.FC = () => {
+ 
   return (
     <div className={styles.certifications}>
+         <h2 className={styles.title}>Achievements</h2>
       <CertificationCard
         title="Teach2Give Certified Software Developer"
         organization="Teach2Give"

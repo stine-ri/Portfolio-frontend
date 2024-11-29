@@ -9,7 +9,12 @@
   color: #64ffda;
   margin-bottom: 20px;
 }
-
+.title {
+  font-size: 36px;
+  color: #64ffda;
+  margin-bottom: 20px;
+  text-align: center;
+}
 .skillsGrid {
   display: flex;
   flex-wrap: wrap;

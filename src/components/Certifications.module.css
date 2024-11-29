@@ -69,7 +69,12 @@
   border-radius: 4px;
   font-size: 0.9rem;
 }
-
+.title {
+  font-size: 36px;
+  color: #64ffda;
+  margin-bottom: 20px;
+  text-align: center;
+}
 /* Media Query for Tablets and Small Screens */
 @media (max-width: 768px) {
   .certificationCard,

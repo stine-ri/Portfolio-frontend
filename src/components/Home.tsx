@@ -1,72 +1,44 @@
 import React from 'react';
-import styles from './Home.module.css'; // Ensure your CSS is here
-import me from '../assets/images/Me1.jpg'; // Import the image
+import { Link } from 'react-router-dom'; // Link component to navigate
+import Projects from './Projects'; // Import the Projects component
+import Services from './Services'; // Import the Services component
+import Experience from './Experience'; // Import the Experience component
+import Certifications from './Certifications'; // Import the Certifications component
+import Contact from './Contact'; // Import the Contact component
+import styles from './Home.module.css'; // CSS for Home
+import me from '../assets/images/Me1.jpg'; // Profile image
 
 const Home: React.FC = () => {
   return (
     <div className={styles.homeContainer}>
       <section className={styles.heroSection}>
         <div className={styles.heroText}>
-          <h1>
-            Hello, My Name Is <span>Christine Nyambwari</span>
-          </h1>
+          <h1>Hello, My Name Is <span>Christine Nyambwari</span></h1>
           <p>A Creative Full Stack Developer & Tech Enthusiast</p>
-          <a href="/about" className={styles.button}>Know More</a>
+          <Link to="/about" className={styles.button}>Know More</Link>
+          <a
+              href="/Christine_resume.pdf"
+              className={styles.downloadCv}
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+              Resume 
+          </a>
+
         </div>
         <div className={styles.heroImage}>
-          <img src={me} alt="Profile" className={styles.heroImage} /> 
-          
+          <img src={me} alt="Profile" className={styles.heroImage} />
         </div>
       </section>
 
-      <section id="about" className={styles.aboutSection}>
-        <h2>Who Am I</h2>
-        <div className={styles.aboutContent}>
-          <img src={me} alt="Profile" className={styles.profileImage} />
-          <div className={styles.aboutText}>
-            <p>
-              I am Christine Nyambwari, a passionate Full Stack Developer based in Kenya. With a background in frontend and backend technologies, I focus on building efficient and scalable solutions.
-            </p>
-            <div className={styles.skills}>
-              <div className={styles.skillGroup}>
-                <span>React</span>
-                <div className={styles.skillStars}>★★★★★</div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>JavaScript</span>
-                <div className={styles.skillStars}>★★★★★</div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>TypeScript</span>
-                <div className={styles.skillStars}>★★★★☆</div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>Node.js</span>
-                <div className={styles.skillStars}>★★★★☆</div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>Hono.js</span>
-                <div className={styles.skillStars}>★★★★★</div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>Drizzle ORM</span>
-                <div className={styles.skillStars}>★★★★★</div>
-              </div>
-            </div>
-            <a href="https://resume-lb4s.vercel.app/" className={styles.downloadCv}>Deployed Resume</a> <br />
-            <a 
-              href="/Christine_resume.pdf" 
-               className={styles.downloadCv} 
-               target="_blank" 
-              rel="noopener noreferrer"
-              >
-                Download Resume PDF
-            </a>
-
-
-          </div>
-        </div>
-      </section>
+      {/* Display the content of the pages on Home */}
+      <div className={styles.pageContent}>
+        <Projects />
+        <Services />
+        <Experience />
+        <Certifications />
+        <Contact />
+      </div>
     </div>
   );
 };

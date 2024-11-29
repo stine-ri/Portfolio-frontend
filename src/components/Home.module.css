@@ -25,6 +25,8 @@ body {
   flex: 1; /* Allow text to take up available space */
   text-align: left; /* Align text to the left */
   padding-right: 50px; /* Space between text and image */
+  word-wrap: break-word; /* Allow long words to break and wrap */
+  overflow-wrap: break-word; /* Prevent overflow for long words */
 }
 
 .heroImage {
@@ -36,13 +38,17 @@ body {
 }
 
 .heroText h1 {
-  font-size: 48px;
+  font-size: 4vw; /* Use viewport width for scalable font size */
   color: #64ffda;
+  max-width: 100%; /* Prevent the heading from overflowing */
+  word-wrap: break-word;
 }
 
 .heroText p {
-  font-size: 24px;
+  font-size: 2vw; /* Scalable font size */
   margin-top: 10px;
+  max-width: 100%; /* Prevent the paragraph from overflowing */
+  overflow-wrap: break-word;
 }
 
 .button {
@@ -58,76 +64,6 @@ body {
 .button:hover {
   background-color: #ffffff;
   color: #0a192f;
-}
-
-.aboutSection {
-  padding: 60px 0; /* Vertical padding */
-  background-color: #0a192f;
-  color: #fff;
-}
-
-.aboutSection h2 {
-  font-size: 36px;
-  color: #64ffda;
-  text-align: center;
-}
-
-.aboutContent {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.profileImage {
-  width: 350px; /* Square image */
-  height: 350px;
-  object-fit: cover;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-  margin-right: 40px;
-}
-
-.aboutText {
-  width: 100%;
-  max-width: 800px;
-  padding: 0 20px;
-}
-
-.aboutText p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #c0c7d1;
-}
-
-/* Skills section */
-.skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 20px;
-  padding: 0 50px; /* Add uniform padding to the skills section */
-}
-
-.skillGroup {
-  font-size: 20px;
-  color: #0a192f;
-  padding: 10px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.skillGroup:hover {
-  background-color: #64ffda;
-  color: #0a192f;
-  transform: translateY(-10px);
-}
-
-.skillStars {
-  color: #64ffda;
-  font-weight: bold;
 }
 
 /* Download CV Button */
@@ -146,107 +82,52 @@ body {
   background-color: #ffffff;
   color: #0a192f;
 }
-
-/* Responsive design for small screens (mobile and tablet) */
-@media (max-width: 1024px) { /* Tablet and smaller */
-  /* Hero Section adjustments for small screens */
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
   .heroSection {
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Add consistent padding */
-    gap: 20px; /* Add space between elements */
+    flex-direction: column; /* Stack elements vertically on small screens */
+    padding: 0 20px; /* Adjust padding for smaller screens */
   }
 
   .heroText {
-    text-align: center; /* Center text */
-    margin: 0 auto; /* Center align the text block */
-    padding: 0; /* Remove extra padding */
+    text-align: center; /* Center align text */
+    padding-right: 0; /* Remove right padding */
+    padding-left: 0; /* Remove left padding */
+    word-wrap: break-word; /* Ensure text wraps properly */
   }
 
   .heroImage {
-    width: 90%; /* Make image responsive */
-    max-width: 300px; /* Limit maximum width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the image */
+    width: 250px; /* Reduce image size */
+    height: 250px; /* Reduce image size */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Add space between image and text */
   }
 
-  .aboutContent {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center the content */
-    width: 90%; /* Reduce the width */
-    margin: 20px auto; /* Add vertical spacing */
+  .button, .downloadCv {
+    margin-left: auto; /* Center the buttons */
+    margin-right: auto; /* Center the buttons */
+    padding: 10px 20px; /* Adjust button padding */
+    display: block; /* Ensure buttons stack vertically */
+    width: auto; /* Set width to auto for buttons */
+    text-align: center; /* Center button text */
+    margin-top: 15px; /* Add spacing between buttons */
+    font-size: 18px; /* Increase font size for better readability on small screens */
   }
 
-  .profileImage {
-    margin-bottom: 15px; /* Add space below the image */
-    width: 100%; /* Make image responsive */
-    max-width: 250px; /* Limit max width */
+  .button {
+    max-width: 250px; /* Limit the width of the button */
   }
 
-  .aboutText {
-    text-align: center; /* Center align text */
-    padding: 10px; /* Add padding for better spacing */
-    font-size: 16px; /* Adjust text size */
-  }
-
-  .skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-    gap: 15px; /* Add spacing between items */
-    width: 100%; /* Full width */
-    margin: 0 auto; /* Center the section */
-  }
-
-  .skillGroup {
-    font-size: 16px; /* Adjust font size */
-    text-align: center; /* Center align skills text */
-  }
-
-  /* Button adjustments for small screens */
-  .button,
   .downloadCv {
-    width: auto; /* Don't take full width */
-    max-width: 250px; /* Limit button width */
-    margin: 10px 0; /* Add vertical spacing */
-    padding: 10px 15px; /* Adjust button padding */
-    font-size: 16px; /* Adjust font size */
-    text-align: center; /* Center text */
+    max-width: 250px; /* Limit the width of the download button */
   }
-}
 
-@media (max-width: 768px) { /* Mobile devices */
-  /* Hero Section adjustments */
+  /* Increase font size for small screens */
   .heroText h1 {
-    font-size: 24px; /* Smaller heading */
-    line-height: 1.4; /* Adjust line height for readability */
+    font-size: 7vw; /* Increase the font size of the heading */
   }
 
   .heroText p {
-    font-size: 16px; /* Smaller paragraph text */
-    line-height: 1.6; /* Improve text readability */
-  }
-
-  .aboutText p {
-    font-size: 14px; /* Smaller text for about section */
-    line-height: 1.5; /* Adjust readability */
-  }
-
-  .skills {
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 10px; /* Adjust spacing */
-  }
-
-  .skillGroup {
-    font-size: 14px; /* Smaller font size for skills */
-  }
-
-  /* Button adjustments for mobile */
-  .button,
-  .downloadCv {
-    width: auto; /* Avoid full width */
-    max-width: 220px; /* Limit button width */
-    padding: 8px 12px; /* Adjust padding for smaller screens */
-    font-size: 14px; /* Adjust font size */
+    font-size: 4.0vw; /* Increase the font size of the paragraph */
   }
 }
