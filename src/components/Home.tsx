@@ -17,14 +17,13 @@ const Home: React.FC = () => {
           <p>A Creative Full Stack Developer & Tech Enthusiast</p>
           <Link to="/about" className={styles.button}>Know More</Link>
           <a
-              href="/Christine_resume.pdf"
+              href="/Stine_resume.pdf"
               className={styles.downloadCv}
               target="_blank"
               rel="noopener noreferrer"
           >
               Resume 
           </a>
-
         </div>
         <div className={styles.heroImage}>
           <img src={me} alt="Profile" className={styles.heroImage} />
