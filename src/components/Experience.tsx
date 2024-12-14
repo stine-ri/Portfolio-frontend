@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Experience.module.css';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaDatabase } from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiRedux, SiPostgresql, SiDrizzle, SiHono, SiDaisyui, SiSass } from 'react-icons/si';
+import { SiTailwindcss, SiTypescript, SiRedux, SiPostgresql, SiDrizzle, SiHono, SiDaisyui, SiSass,SiFigma } from 'react-icons/si';
 import azure from '../assets/images/azure.jpg'
 const Experience: React.FC = () => {
   return (
@@ -67,6 +67,10 @@ const Experience: React.FC = () => {
         <div className={styles.skill}>
           <FaDatabase size={60} color="#F29111" />
           <p>SQL</p>
+        </div>
+        <div className={styles.skill}>
+          <SiFigma size={60} color="#F29111" />
+          <p>Figma</p>
         </div>
         {/* Add more skills if needed */}
       </div>
