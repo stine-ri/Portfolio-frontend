@@ -1,76 +1,63 @@
 import React from 'react';
 import styles from './Experience.module.css';
-import react2 from '../assets/images/React 2.webp';
-import node from '../assets/images/node.png';
-import typescript from '../assets/images/typescript.png';
-import postgresql from '../assets/images/postgresql.png';
-import hono from '../assets/images/hono.webp';
-import html from '../assets/images/html.png';
-import css from '../assets/images/css.png';
-import javascript from '../assets/images/javascript.webp';
-import tailwind from '../assets/images/tailwind.png';
-import scss from '../assets/images/scss.png';
-import drizzle from '../assets/images/drizzle.png';
-import daisy from '../assets/images/daisy.png';
-import redux from '../assets/images/RRedux.svg'
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaDatabase } from 'react-icons/fa';
+import { SiTailwindcss, SiTypescript, SiRedux, SiPostgresql, SiDrizzle, SiHono, SiDaisyui, SiSass } from 'react-icons/si';
 import azure from '../assets/images/azure.jpg'
-import sql from '../assets/images/sql.png'
-
 const Experience: React.FC = () => {
   return (
     <section id="experience" className={styles.experienceSection}>
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.skillsGrid}>
         <div className={styles.skill}>
-          <img src={react2} alt="React.js" className={styles.skillIcon} />
+          <FaReact size={60} color="#61DBFB" />
           <p>React.js</p>
         </div>
         <div className={styles.skill}>
-          <img src={node} alt="Node.js" className={styles.skillIcon} />
+          <FaNodeJs size={60} color="#68A063" />
           <p>Node.js</p>
         </div>
         <div className={styles.skill}>
-          <img src={typescript} alt="TypeScript" className={styles.skillIcon} />
+          <SiTypescript size={60} color="#3178C6" />
           <p>TypeScript</p>
         </div>
         <div className={styles.skill}>
-          <img src={postgresql} alt="PostgreSQL" className={styles.skillIcon} />
+          <SiPostgresql size={60} color="#336791" />
           <p>PostgreSQL</p>
         </div>
         <div className={styles.skill}>
-          <img src={hono} alt="Hono.js" className={styles.skillIcon} />
+          <SiHono size={60} color="#FF6A00" />
           <p>Hono.js</p>
         </div>
         <div className={styles.skill}>
-          <img src={html} alt="HTML" className={styles.skillIcon} />
+          <FaHtml5 size={60} color="#E44D26" />
           <p>HTML</p>
         </div>
         <div className={styles.skill}>
-          <img src={css} alt="CSS" className={styles.skillIcon} />
+          <FaCss3Alt size={60} color="#1572B6" />
           <p>CSS</p>
         </div>
         <div className={styles.skill}>
-          <img src={javascript} alt="JavaScript" className={styles.skillIcon} />
+          <FaJsSquare size={60} color="#F7DF1E" />
           <p>JavaScript</p>
         </div>
         <div className={styles.skill}>
-          <img src={tailwind} alt="Tailwind CSS" className={styles.skillIcon} />
+          <SiTailwindcss size={60} color="#38B2AC" />
           <p>Tailwind CSS</p>
         </div>
         <div className={styles.skill}>
-          <img src={scss} alt="SCSS" className={styles.skillIcon} />
+          <SiSass size={60} color="#CD6799" />
           <p>SCSS</p>
         </div>
         <div className={styles.skill}>
-          <img src={drizzle} alt="SCSS" className={styles.skillIcon} />
-          <p>Drizlle ORM</p>
+          <SiDrizzle size={60} color="#84B6F4" />
+          <p>Drizzle ORM</p>
         </div>
         <div className={styles.skill}>
-          <img src={daisy} alt="SCSS" className={styles.skillIcon} />
+          <SiDaisyui size={60} color="#FF69B4" />
           <p>Daisy UI</p>
         </div>
         <div className={styles.skill}>
-          <img src={redux} alt="REDUX.JS" className={styles.skillIcon} />
+          <SiRedux size={60} color="#764ABC" />
           <p>Redux.js</p>
         </div>
         <div className={styles.skill}>
@@ -78,12 +65,10 @@ const Experience: React.FC = () => {
           <p>Azure</p>
         </div>
         <div className={styles.skill}>
-          <img src={sql} alt="Sql" className={styles.skillIcon} />
+          <FaDatabase size={60} color="#F29111" />
           <p>SQL</p>
         </div>
-     
-        
-        {/* Add more skills as needed */}
+        {/* Add more skills if needed */}
       </div>
     </section>
   );

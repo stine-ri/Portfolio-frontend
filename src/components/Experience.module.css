@@ -1,5 +1,5 @@
 .experienceSection {
-  padding: 60px; /* Increased padding */
+  padding: 60px;
   background-color: #0a192f;
   color: white;
 }
@@ -8,41 +8,37 @@
   font-size: 36px;
   color: #64ffda;
   margin-bottom: 20px;
-}
-.title {
-  font-size: 36px;
-  color: #64ffda;
-  margin-bottom: 20px;
   text-align: center;
 }
+
 .skillsGrid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Maintain spacing */
-  justify-content: space-between; /* Space out items evenly */
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .skill {
   background-color: #112240;
-  padding: 20px; /* Increased padding for skill items */
+  padding: 20px;
   border-radius: 8px;
   text-align: center;
   flex: 1 1 calc(20% - 20px); /* 5 items in a row with spacing */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-.skill:hover {
-  transform: scale(1.05); /* Scale up on hover */
+  transition: transform 0.3s ease;
 }
 
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.skill p {
+  color: #64ffda;
+  font-size: 16px;
+  margin-top: 10px;
+}
 .skillIcon {
   width: 160px; /* Slightly larger icon */
   height: 130px; /* Slightly larger icon */
   margin-bottom: 10px;
   border-radius: 15px;
 }
-
-p {
-  color: #64ffda;
-  font-size: 16px;
-}
-
