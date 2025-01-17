@@ -49,6 +49,7 @@ body {
   margin-top: 10px;
   max-width: 100%; /* Prevent the paragraph from overflowing */
   overflow-wrap: break-word;
+  color: #64ffda;
 }
 
 .button {
